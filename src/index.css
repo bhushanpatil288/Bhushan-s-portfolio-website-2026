@@ -23,6 +23,8 @@
 }
 
 
+/* backgrounds */
+
 .my-bg-primary {
   background-color: var(--my-bg-primary);
 }
@@ -33,6 +35,11 @@
 
 .my-bg-tertiary {
   background-color: var(--my-bg-tertiary);
+}
+
+/* text */
+.text-accent {
+  color: var(--accent);
 }
 
 .navActive {

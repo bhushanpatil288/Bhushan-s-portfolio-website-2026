@@ -8,9 +8,9 @@ const Layout = ({ children }) => {
       <div className="container mx-auto">
         <div className="flex gap-6 flex-col xl:flex-row">
 
-          <aside className="xl:w-1/4 px-3 py-2 my-bg-primary border border-gray-700 rounded-2xl px-5 py-5">
+          <aside className="xl:w-1/4 px-8 py-8 my-bg-primary border border-gray-700 rounded-2xl px-5 py-5">
             <div className="flex gap-8 xl:flex-col">
-              <div className="my-bg-tertiary rounded-3xl p-3 overflow-hidden xl:mx-12 xl:flex xl:justify-center">
+              <div className="my-bg-tertiary rounded-3xl p-3 overflow-hidden xl:mx-12 2xl:mx-20 xl:flex xl:justify-center">
                 <div className="overflow-hidden y-bg-tertiary rounded-3xlflex justify-center">
                   <img src={avatar} alt="" className="w-30 scale-140" />
                 </div>
@@ -24,7 +24,7 @@ const Layout = ({ children }) => {
             </div>
           </aside>
 
-          <div className="xl:w-3/4 border border-gray-700 rounded-2xl px-10 px-3 py-10 my-bg-primary overflow-hidden relative">
+          <div className="xl:w-3/4 mb-20 xl:mb-0 border border-gray-700 rounded-2xl px-10 px-3 py-10 my-bg-primary overflow-hidden relative">
             <nav className="fixed left-0 w-screen xl:w-auto bottom-0 xl:bottom-auto xl:left-auto xl:absolute xl:top-0 xl:-right-2  my-bg-secondary py-5 px-10 rounded-t rounded-2xl">
               <ul className="flex gap-10 justify-center xl:justify-start">
                 {navItems.map((item, i) => {
