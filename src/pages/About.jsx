@@ -1,7 +1,8 @@
 import Layout from "../Layout"
+import RenderAboutCards from "../components/AboutComponents/RenderAboutCards"
 import PageHeading from "../components/PageHeading"
 import PageSubHeading from "../components/pageSubHeading"
-import { RiFileEditLine, RiPagesLine, RiToolsFill, RiMacLine } from "@remixicon/react"
+
 const About = () => {
   return (
     <Layout>
@@ -12,42 +13,7 @@ const About = () => {
       <div className="mt-10">
         <PageSubHeading title="What I'm Doing" />
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
-          <div className="my-bg-secondary shadow-lg p-6 rounded-lg flex gap-4 items-center">
-            <div className="text-accent p-5 my-bg-primary rounded-xl h-full flex justify-center items-center shadow-inner">
-              <RiToolsFill size={40} />
-            </div>
-            <div>
-              <h3 className="text-xl font-bold">Backend development</h3>
-              <p className="text-gray-400 mt-2">High-quality development of backend at the professional level.</p>
-            </div>
-          </div>
-          <div className="my-bg-secondary shadow-lg p-6 rounded-lg flex gap-4 items-center">
-            <div className="text-accent p-5 my-bg-primary rounded-xl h-full flex justify-center items-center shadow-inner">
-              <RiMacLine size={40} />
-            </div>
-            <div>
-              <h3 className="text-xl font-bold">Frontend development</h3>
-              <p className="text-gray-400 mt-2">High-quality development of frontend at the professional level.</p>
-            </div>
-          </div>
-          <div className="my-bg-secondary shadow-lg p-6 rounded-lg flex gap-4 items-center">
-            <div className="text-accent p-5 my-bg-primary rounded-xl h-full flex justify-center items-center shadow-inner">
-              <RiFileEditLine size={40} />
-            </div>
-            <div>
-              <h3 className="text-xl font-bold">Web Design</h3>
-              <p className="text-gray-400 mt-2">The most modern and high-quality design made at a professional level.</p>
-            </div>
-          </div>
-          <div className="my-bg-secondary shadow-lg p-6 rounded-lg flex gap-4 items-center">
-            <div className="text-accent p-5 my-bg-primary rounded-xl h-full flex justify-center items-center shadow-inner">
-              <RiPagesLine size={40} />
-            </div>
-            <div>
-              <h3 className="text-xl font-bold">Web development</h3>
-              <p className="text-gray-400 mt-2">High-quality development of sites at the professional level.</p>
-            </div>
-          </div>
+          <RenderAboutCards />
         </div>
       </div>
     </Layout>
