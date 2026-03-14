@@ -6,13 +6,13 @@ const RenderAboutCards = () => {
       {
         whatIamDoing.map((card, k) => {
           return (
-            <div key={k} className="my-bg-secondary shadow-lg p-6 rounded-lg flex gap-4 items-center">
+            <div key={k} className="my-bg-secondary shadow-lg p-6 rounded-lg flex flex-col md:flex-row gap-4 items-center">
               <div className="text-accent p-5 my-bg-primary rounded-xl h-full flex justify-center items-center shadow-inner">
                 <card.icon size={40} />
               </div>
               <div>
-                <h3 className="text-xl font-bold">{card.title}</h3>
-                <p className="text-gray-400 mt-2">{card.description}</p>
+                <h3 className="text-center md:text-left text-xl font-bold">{card.title}</h3>
+                <p className="text-gray-400 mt-2 text-center md:text-left">{card.description}</p>
               </div>
             </div>
           )

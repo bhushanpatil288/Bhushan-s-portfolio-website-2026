@@ -4,14 +4,14 @@ import avatar from "/images/my-avatar.png"
 
 const Layout = ({ children }) => {
   return (
-    <section className="mt-10 mx-10">
+    <section className="mt-3 md:mt-10 mx-3 md:mx-10">
       <div className="container mx-auto">
         <div className="flex gap-6 flex-col xl:flex-row">
 
           <aside className="xl:w-1/4 my-bg-primary border border-gray-700 rounded-2xl px-6 py-6">
             <div className="flex gap-6 xl:flex-col xl:items-center">
-              <div className="my-bg-tertiary rounded-3xl p-3 overflow-hidden xl:w-full flex justify-center">
-                <div className="overflow-hidden my-bg-tertiary rounded-3xl flex justify-center">
+              <div className="sm:my-bg-tertiary rounded-3xl p-3 overflow-hidden xl:w-full flex justify-center">
+                <div className="overflow-hidden sm:my-bg-tertiary rounded-3xl flex justify-center">
                   <img src={avatar} alt="Avatar of Bhushan Patil" className="w-32 h-32 object-cover rounded-2xl" />
                 </div>
               </div>
@@ -51,7 +51,7 @@ const Layout = ({ children }) => {
 
           <div className="xl:w-3/4 mb-20 xl:mb-0 border border-gray-700 rounded-2xl px-10 px-3 py-10 my-bg-primary overflow-hidden relative">
             <nav className="fixed left-0 w-screen xl:w-auto bottom-0 xl:bottom-auto xl:left-auto xl:absolute xl:top-0 xl:-right-2  my-bg-secondary py-5 px-10 rounded-t rounded-2xl">
-              <ul className="flex gap-5 md:gap-10 justify-center xl:justify-start">
+              <ul className="flex gap-4 md:gap-10 justify-center xl:justify-start text-sm md:text-base">
                 {navItems.map((item, i) => {
                   return (
                     <li key={i}>
