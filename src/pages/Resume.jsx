@@ -2,7 +2,7 @@ import Layout from "../Layout"
 import PageHeading from "../components/PageHeading"
 
 const Resume = () => {
-  const resumeUrl = "/Mr._Bhushan_Ghansham_Patil_FlowCV_Resume_2026-03-11.pdf"
+  const resumeUrl = "/Bhushan_Ghansham_Patil_Resume_2026-03-31.pdf"
 
   return (
     <Layout>
